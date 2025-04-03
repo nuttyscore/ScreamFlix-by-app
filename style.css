@@ -1,1 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Creepster', cursive;
+}
+
+body {
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+/* SPLASH SCREEN */
+.splash-screen {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #7a0000, #000);
+}
+
+.logo {
+    font-size: 50px;
+    color: white;
+}
+.logo span {
+    color: red;
+}
+
+/* LOGIN SCREEN */
+.login-screen {
+    display: none;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #7a0000, #000);
+}
+
+.logo-img {
+    width: 100px;
+}
+
+.subtitle {
+    margin: 10px;
+}
+
+.btn {
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    background: red;
+    border: none;
+    cursor: pointer;
+}
+
+.btn.google {
+    background: white;
+    color: black;
+}
+
+/* FEED */
+.feed-screen {
+    display: none;
+    background: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.profile-icon {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.feed {
+    padding: 10px;
+}
+
+.post {
+    background: #222;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.post img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.icons i {
+    margin: 10px;
+    cursor: pointer;
+}
 
