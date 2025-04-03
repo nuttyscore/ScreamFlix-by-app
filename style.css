@@ -11,67 +11,39 @@ body {
     background: black;
     color: white;
     text-align: center;
+    height: 100vh;
+    overflow: hidden;
 }
 
 /* SPLASH SCREEN */
-.splash-screen {
-    height: 100vh;
+#splash-screen {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #7a0000, #000);
+    background: black;
+    height: 100vh;
 }
 
 .logo {
-    font-size: 50px;
-    color: white;
-}
-.logo span {
-    color: red;
+    width: 150px;
 }
 
-/* LOGIN SCREEN */
-.login-screen {
+/* ESCONDER ELEMENTOS */
+.hidden {
     display: none;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom, #7a0000, #000);
 }
 
-.logo-img {
-    width: 100px;
-}
-
-.subtitle {
-    margin: 10px;
-}
-
-.btn {
-    width: 80%;
-    margin: 10px;
-    padding: 10px;
-    background: red;
-    border: none;
-    cursor: pointer;
-}
-
-.btn.google {
-    background: white;
-    color: black;
-}
-
-/* FEED */
-.feed-screen {
-    display: none;
+/* APP */
+#app {
     background: black;
+    height: 100vh;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    border-bottom: 2px solid red;
 }
 
 .profile-icon {
@@ -95,8 +67,15 @@ header {
     border-radius: 10px;
 }
 
-.icons i {
-    margin: 10px;
+/* BOTÃO CURTIR */
+.like-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
     cursor: pointer;
 }
 
+.liked {
+    color: red;
+}
+ds
