@@ -15,8 +15,8 @@ body {
     overflow: hidden;
 }
 
-/* SPLASH SCREEN */
-#splash-screen {
+/* TELA DO NOME */
+#name-screen {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,8 +24,19 @@ body {
     height: 100vh;
 }
 
-.logo {
-    width: 150px;
+.name-text {
+    font-size: 48px;
+    color: red;
+    text-shadow: 0 0 20px red;
+}
+
+/* SPLASH SCREEN */
+#splash-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    height: 100vh;
 }
 
 /* ESCONDER ELEMENTOS */
