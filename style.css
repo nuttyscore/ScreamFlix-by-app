@@ -1,91 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Creepster', cursive;
-}
-
+/* styles.css */
 body {
-    background: black;
+    background-color: black;
     color: white;
+    font-family: Arial, sans-serif;
     text-align: center;
-    height: 100vh;
-    overflow: hidden;
 }
-
-/* TELA DO NOME */
-#name-screen {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: black;
-    height: 100vh;
-}
-
-.name-text {
-    font-size: 48px;
-    color: red;
-    text-shadow: 0 0 20px red;
-}
-
-/* SPLASH SCREEN */
-#splash-screen {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: black;
-    height: 100vh;
-}
-
-/* ESCONDER ELEMENTOS */
-.hidden {
-    display: none;
-}
-
-/* APP */
-#app {
-    background: black;
-    height: 100vh;
-}
-
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border-bottom: 2px solid red;
-}
-
-.profile-icon {
-    width: 40px;
-    border-radius: 50%;
-}
-
-.feed {
+    background-color: red;
     padding: 10px;
 }
-
-.post {
-    background: #222;
+textarea {
+    width: 80%;
+    height: 50px;
+    margin: 10px;
+}
+button {
+    background-color: red;
+    color: white;
     padding: 10px;
-    margin: 10px 0;
-    border-radius: 10px;
-}
-
-.post img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* BOTÃO CURTIR */
-.like-btn {
-    background: none;
     border: none;
-    font-size: 24px;
-    cursor: pointer;
+}
+#post-container {
+    margin-top: 20px;
+}
+.post {
+    border-bottom: 1px solid gray;
+    padding: 10px;
 }
 
-.liked {
-    color: red;
+/* script.js */
+function addPost() {
+    let input = document.getElementById("post-input");
+    if (input.value.trim() !== "") {
+        let postContainer = document.getElementById("post-container");
+        let newPost = document.createElement("div");
+        newPost.className = "post";
+        newPost.textContent = input.value;
+        postContainer.prepend(newPost);
+        input.value = "";
+    }
 }
